@@ -64,6 +64,33 @@ The system predicts:
 
 Along with probability score.
 
+## 📊 Flood Risk Classification
+
+The model predicts flood risk as a probability (0 to 1) using a Logistic Regression model implemented from scratch.
+
+Based on the predicted probability, flood risk is categorized as:
+
+| Probability Range | Risk Level |
+|------------------|-----------|
+| 0.00 – 0.35      | 🟢 Low Flood Risk |
+| 0.35 – 0.70      | 🟡 Medium Flood Risk |
+| 0.70 – 1.00      | 🔴 High Flood Risk |
+
+### Interpretation
+
+- **Low Risk (0.00–0.35):**
+  Minimal flood likelihood. Regular monitoring is sufficient.
+
+- **Medium Risk (0.35–0.70):**
+  Moderate flood possibility. Preventive measures and planning are recommended.
+
+- **High Risk (0.70–1.00):**
+  High probability of flood occurrence. Immediate preparedness and mitigation actions are required.
+
+### Note
+
+The prediction is based on the **combined influence of all environmental, climatic, and infrastructure factors**. Even moderate values across multiple features can lead to higher flood risk due to cumulative impact.
+
 ---
 
 ## 🖥️ Streamlit UI
